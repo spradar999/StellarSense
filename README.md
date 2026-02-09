@@ -1,4 +1,5 @@
 🌌 Stellar Object Classification using Machine Learning (SDSS DR17)
+
 📌 Project Overview
 
 The Sloan Digital Sky Survey (SDSS) is one of the largest astronomical surveys, producing massive volumes of data about celestial objects such as stars, galaxies, and quasars. Manual classification of these objects is time-consuming and impractical due to the rapid growth of astronomical datasets.
@@ -82,18 +83,25 @@ F1 Score
 Matthews Correlation Coefficient (MCC)
 
 5. Comparative Analysis of Evaluation Metrics
-Model	Accuracy	AUC	Precision	Recall	F1	MCC
-Logistic Regression	0.957	0.988	0.955	0.948	0.951	0.925
-Decision Tree	0.966	0.970	0.960	0.961	0.960	0.939
-KNN	0.903	0.952	0.920	0.864	0.889	0.826
-Naive Bayes	0.691	0.845	0.607	0.595	0.524	0.437
-Random Forest	0.979	0.995	0.978	0.973	0.976	0.963
-XGBoost	0.978	0.996	0.977	0.972	0.974	0.960
-6. Observation about Model Performance
-Model	Observation
-Logistic Regression	Shows strong performance with balanced precision, recall, and F1-score. High AUC indicates good class separability. Slightly weaker than ensemble models due to linear decision boundaries.
-Decision Tree	Captures non-linear patterns effectively and achieves high accuracy. However, it is more prone to overfitting compared to ensemble methods.
-kNN	Moderate performance with good precision but lower recall. Sensitive to choice of k and computationally expensive for large datasets.
-Naive Bayes	Weakest performance due to unrealistic independence assumptions among astronomical features.
-Random Forest (Ensemble)	Best overall performer with high accuracy and stability. Ensemble learning reduces overfitting and improves generalization.
-XGBoost (Ensemble)	Comparable to Random Forest with excellent AUC and strong discrimination capability. Efficient at modeling complex relationships.
+## 📈 Performance Comparison
+
+| Model               | Accuracy | AUC   | Precision | Recall | F1    | MCC   |
+|---------------------|----------|-------|-----------|--------|-------|-------|
+| Logistic Regression | 0.957    | 0.988 | 0.955     | 0.948  | 0.951 | 0.925 |
+| Decision Tree       | 0.966    | 0.970 | 0.960     | 0.961  | 0.960 | 0.939 |
+| kNN                 | 0.903    | 0.952 | 0.920     | 0.864  | 0.889 | 0.826 |
+| Naive Bayes         | 0.691    | 0.845 | 0.607     | 0.595  | 0.524 | 0.437 |
+| Random Forest       | 0.979    | 0.995 | 0.978     | 0.973  | 0.976 | 0.963 |
+| XGBoost             | 0.978    | 0.996 | 0.977     | 0.972  | 0.974 | 0.960 |
+
+## 📝 Observation about Model Performance
+
+| Model                     | Observation |
+|---------------------------|-------------|
+| Logistic Regression       | Shows strong performance with balanced precision, recall, and F1-score. High AUC indicates good class separability. Slightly weaker than ensemble models due to linear decision boundaries. |
+| Decision Tree             | Captures non-linear patterns effectively and achieves high accuracy. However, it is more prone to overfitting compared to ensemble methods. |
+| kNN                       | Moderate performance with good precision but lower recall. Sensitive to choice of k and computationally expensive for large datasets. |
+| Naive Bayes               | Weakest performance due to unrealistic independence assumptions among astronomical features. |
+| Random Forest (Ensemble)  | Best overall performer with high accuracy and stability. Ensemble learning reduces overfitting and improves generalization. |
+| XGBoost (Ensemble)        | Comparable to Random Forest with excellent AUC and strong discrimination capability. Efficient at modeling complex relationships. |
+
