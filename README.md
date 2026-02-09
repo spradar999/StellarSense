@@ -12,6 +12,15 @@ Task: Multi-class classification (Star, Galaxy, Quasar)
 
 The dataset consists of astronomical observations of celestial objects captured through photometric and spectroscopic measurements. Each record corresponds to a single observed object and contains spatial coordinates, brightness values in multiple wavelength bands, and spectroscopic information.
 
+## Citation
+
+Fedesoriano. (January 2022). Stellar Classification Dataset - SDSS17. Retrieved February 10, 2026, from https://www.kaggle.com/fedesoriano/stellar-classification-dataset-sdss17
+
+## Acknowledgements
+
+The data released by the Sloan Digital Sky Survey (SDSS) is in the public domain. This dataset is taken from the current data release DR17.
+Abdurro’uf et al., The Seventeenth Data Release of the Sloan Digital Sky Surveys: Complete Release of MaNGA, MaStar and APOGEE-2 Data (submitted to ApJS) arXiv:2112.02026
+
 ## 🔹 Key Attributes
 
 alpha (Right Ascension) and delta (Declination): Sky coordinates
