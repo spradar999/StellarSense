@@ -1,24 +1,10 @@
-🌌 Stellar Object Classification using Machine Learning (SDSS DR17)
+# 🌌 StellarSense: Stellar Object Classification using Machine Learning
 
-📌 Project Overview
-
-The Sloan Digital Sky Survey (SDSS) is one of the largest astronomical surveys, producing massive volumes of data about celestial objects such as stars, galaxies, and quasars. Manual classification of these objects is time-consuming and impractical due to the rapid growth of astronomical datasets.
-
-This project develops and compares multiple machine learning models to automatically classify celestial objects into three categories:
-
-Star
-
-Galaxy
-
-Quasar (QSO)
-
-A Streamlit web application is built and deployed to demonstrate the trained models with an interactive user interface.
-
-1. Problem Statement
+## Problem Statement
 
 The objective of this project is to design an automated classification system using machine learning techniques to accurately classify celestial objects using photometric and spectroscopic features from the SDSS DR17 dataset. Multiple classification models are trained, evaluated, and compared to identify the most effective approach.
 
-2. Dataset Description
+## Dataset Description
 
 Dataset Name: Stellar Classification Dataset – SDSS17
 Source: Sloan Digital Sky Survey (SDSS) Data Release 17
@@ -26,7 +12,7 @@ Task: Multi-class classification (Star, Galaxy, Quasar)
 
 The dataset consists of astronomical observations of celestial objects captured through photometric and spectroscopic measurements. Each record corresponds to a single observed object and contains spatial coordinates, brightness values in multiple wavelength bands, and spectroscopic information.
 
-🔹 Key Attributes
+## 🔹 Key Attributes
 
 alpha (Right Ascension) and delta (Declination): Sky coordinates
 
@@ -38,7 +24,7 @@ run_ID, rerun_ID, cam_col, field_ID, plate, MJD, fiber_ID: Instrumental identifi
 
 class: Target label (STAR, GALAXY, QSO)
 
-🔹 Dataset Characteristics
+## 🔹 Dataset Characteristics
 
 Type: Structured tabular data
 
@@ -50,7 +36,7 @@ Target variable: class
 
 Nature of problem: Multi-class classification
 
-3. Models Used
+## Models Used
 
 The following machine learning models were implemented:
 
@@ -66,23 +52,7 @@ Random Forest (Ensemble)
 
 XGBoost (Ensemble)
 
-4. Evaluation Metrics
 
-Each model was evaluated using:
-
-Accuracy
-
-AUC Score
-
-Precision
-
-Recall
-
-F1 Score
-
-Matthews Correlation Coefficient (MCC)
-
-5. Comparative Analysis of Evaluation Metrics
 ## 📈 Performance Comparison
 
 | Model               | Accuracy | AUC   | Precision | Recall | F1    | MCC   |
