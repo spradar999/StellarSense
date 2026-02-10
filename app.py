@@ -30,32 +30,7 @@ scaler = joblib.load("model/scaler.pkl")
 label_encoder = joblib.load("model/label_encoder.pkl")
 import streamlit as st
 
-st.set_page_config(layout="wide")
 
-st.markdown("""
-<style>
-video {
-    object-fit: cover;
-}
-
-#bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-.stApp {
-    background: rgba(0,0,0,0);
-}
-</style>
-
-<video autoplay muted loop id="bg-video">
-    <source src="https://cdn.pixabay.com/video/2020/06/24/43016-427643512_large.mp4" type="video/mp4">
-</video>
-""", unsafe_allow_html=True)
 
 st.title("🌌 StellarSense – Classifying Stars, Galaxies & Quasars")
 
