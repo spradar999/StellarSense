@@ -35,7 +35,7 @@ models = {
 scaler = joblib.load("model/scaler.pkl")
 label_encoder = joblib.load("model/label_encoder.pkl")
 
-st.title("🌌 SDSS Object Classification App")
+st.title("🌌 StellarSense – Classifying Stars, Galaxies & Quasars")
 
 # ------------------------
 # (a) Dataset Upload
