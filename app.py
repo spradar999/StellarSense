@@ -1,3 +1,17 @@
+
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+import joblib
+
+from sklearn.metrics import (
+    accuracy_score, precision_score, recall_score,
+    f1_score, roc_auc_score, matthews_corrcoef,
+    confusion_matrix, classification_report
+)
+import seaborn as sns
+import matplotlib.pyplot as plt
 # -*- coding: utf-8 -*-
 st.markdown("""
 <style>
@@ -28,20 +42,6 @@ body {
 
 <div class="stars"></div>
 """, unsafe_allow_html=True)
-
-
-import streamlit as st
-import pandas as pd
-import numpy as np
-import joblib
-
-from sklearn.metrics import (
-    accuracy_score, precision_score, recall_score,
-    f1_score, roc_auc_score, matthews_corrcoef,
-    confusion_matrix, classification_report
-)
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 # ------------------------
 # Load models
