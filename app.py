@@ -1,4 +1,33 @@
 # -*- coding: utf-8 -*-
+st.markdown("""
+<style>
+body {
+    background: black;
+    overflow: hidden;
+}
+
+.stApp {
+    background: transparent;
+}
+
+@keyframes moveStars {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 5000px;}
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: 
+        url("https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/stars.png");
+    animation: moveStars 200s linear infinite;
+    z-index: -1;
+}
+</style>
+
+<div class="stars"></div>
+""", unsafe_allow_html=True)
 
 
 import streamlit as st
